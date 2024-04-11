@@ -34,15 +34,15 @@ const Result = (props) => {
             },
           }}
         >
-          {currQuestion.testCases.map((testCase, index) => (
+          {/* {currQuestion.testCases.map((testCase, index) => (
             <Tab label={`Case ${index + 1}`} key={index} />
-          ))}
+          ))} */}
         </Tabs>
       ) : null}
 
       {currQuestion.testCases ? (
         <div className="bg-[#444444] px-4 pt-2 rounded-bl-lg rounded-br-lg overflow-y-scroll">
-          {currQuestion.testCases.map((testCase, index) => (
+          {/* {currQuestion.testCases.map((testCase, index) => (
             <div
               key={index}
               style={{ display: value === index ? "block" : "none" }}
@@ -69,7 +69,7 @@ const Result = (props) => {
                 {JSON.stringify(testCase.output)}
               </p>
             </div>
-          ))}
+          ))} */}
         </div>
       ) : null}
     </div>
